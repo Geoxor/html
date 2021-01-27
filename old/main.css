@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --bg-color: #1b0d31;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1b0d31;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.blur {
+    transition: all 200ms ease;
+    position: absolute;
+    background-image: url(assets/background.png);
+    background-size: cover;
+    width: 100vw;
+    height: fit-content;
+}
+
+.welcome {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/arii-lofi.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 70%;
+    z-index: 2;
+}
+
+.welcome-box {
+    display: none;
+    justify-content: center;
+    width: 800px;
+    height: 450px;
+    padding: 36px;
+    border-radius: 15px;
+}
+
+.welcome-box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-box-logo {
+    background-image: url(assets/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 220px;
+    height: 160px;
+    margin-bottom: 12px;
+
+}
+
+.welcome-box h1 {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 4px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.welcome-box p1 {
+    margin-top: 16px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.faq {
+    padding: 25px 10%;
+    padding-top: 100px;
+    flex-direction: column;
+    align-items: left;
+}
+
+.faq-title {
+    font-size: 64px;
+    text-align: center;
+    color: white;
+}
+
+.faq-container {
+    display: block;
+    color: white;
+    letter-spacing: 1px;
+    text-align: left;
+    padding-top: 32px;
+}
+
+
+.faq-dark {
+    border: 4px dashed #130826;
+    border-radius: 16px;
+    padding: 4px;
+}
+
+.faq-light {
+    border: 4px dashed #24133f;
+    border-radius: 16px;
+    padding: 4px;
+    margin: 5px 0px;
+}
+
+.faq-container .faq-dark h1, .faq-container .faq-light h1{
+    font-size: 18px;
+    margin: 10px 0px;
+    margin-left: 10px;
+}
+
+.faq-container .faq-dark p, .faq-container .faq-light p{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    opacity: 70%;
+}
+
+.music-container {
+    flex-direction: column;
+    padding: 0px 10%;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 128px;
+
+}
+
+.music-container img {
+    margin: 5px;
+    width: 176px;
+    height: auto;
+    cursor: pointer;
+    transition: 100ms ease;
+}
+
+.music-container img:hover {
+    transform: scale(1.04);
+}
+
+.music-container img:active {
+    transform: scale(1);
+}
+
+.music-container h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 5px;
+    text-transform: uppercase;
+
+}
+
+.music-grid {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-links {
+    margin-top: 50px;
+    display: inline;
+    font-size: 26px;
+}
+
+.social-links i {
+    margin: 0px 6px;
+    transition: 100ms ease;
+}
+
+.social-links i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.fa-twitch:before {
+    color: #d62cff;
+}
+
+.fa-youtube:before {
+    color: #ff1d98;
+}
+
+.fa-soundcloud:before {
+    color: #ff3a87;
+}
+
+.fa-discord:before {
+    color: #b129ff;
+}
+
+.fa-twitter:before {
+    color: #0fbdfc;
+}
+
+.fa-spotify:before {
+    color: #88dfc7;
+}
+
+.fa-itunes:before {
+    color: #ff0fde;
+}
+
+.fa-facebook:before{
+    color: rgb(015, 123, 252)
+}
+
+.fa-reddit-alien:before {
+    color: #ff0f5f;
+}
+
+.fa-deezer:before {
+    color: #46e1ff;
+}
+
+.fa-instagram:before {
+    color: #c62fff;
+}
+
+.biography {
+    padding: 25px 10%;
+    padding-top: 100px;
+    flex-direction: column;
+    align-items: left;
+    height: 100vh;
+}
+
+.biography-title{
+    font-size: 64px;
+    text-align: center;
+    color: white;
+}
+
+.biography-container{
+    padding-top: 32px;
+    font-size: 18px;
+    text-align: left;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.biography-container p{
+    border: 4px dashed #24133f;
+    border-radius: 16px;
+    padding: 6px 12px;
+    margin: 5px 0px;
+}
+
+.contact-container{
+    padding-top: 32px;
+    font-size: 18px;
+    text-align: left;
+    color: white;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container p{
+    border: 4px dashed #24133f;
+    border-radius: 16px;
+    padding: 6px 12px;
+    margin: 5px 0px;
+}
+
+.contact-btn{
+    padding: .2rem 1rem;
+    background-image: linear-gradient(62deg, #fe0fde 0%, #ff1e98 100%);
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: 1s ease;
+    width: fit-content;
+    margin: 6px;
+}
+
+.contact-btn span{
+    display: block;
+    padding: 8px;
+}
+
+.contact-btn:hover {
+    background-image: linear-gradient(62deg, #fe0fde 0%, #fe0fde 100%);
+}
+
+.contact-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-line {
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 0px 10%;
+
+}
